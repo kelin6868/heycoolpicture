@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=2">
+<style>
+img {
+    -webkit-filter: saturate(7);
+    filter: saturate(8) hue-rotate(40deg) drop-shadow(8px 8px 10px gray) blur(1px) contrast(600%);
+  }
+</style>
+
+<style>
+  .glitch {
+	position: relative;
+	width: var(--glitch-width);
+	max-width: 400px;
+	height: var(--glitch-height);
+	max-height: calc(400px * 1.25);
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.glitch:hover {
+	cursor: pointer;
+}
+
+.glitch__img {
+	position: absolute;
+	top: calc(-1 * var(--gap-vertical));
+	left: calc(-1 * var(--gap-horizontal));
+	width: calc(100% + var(--gap-horizontal) * 2);
+	height: calc(100% + var(--gap-vertical) * 2);
+	background: url(../img/1.jpg) no-repeat 50% 0;
+	background-color: var(--blend-color-1);
+	background-size: cover;
+	background-blend-mode: var(--blend-mode-1);
+}
+</style>
+</head>
+<body>
+
+<p>Write something in here later:</p>
+
+<img src="IMG_4748.jpg" alt="IMG_4748" width="400" height="300">
+
+<p><strong>Note:</strong>And here too, but at least I got the picture done alright.</p>
+
+</body>
+</html>
